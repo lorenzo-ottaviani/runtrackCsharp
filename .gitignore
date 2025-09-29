@@ -416,3 +416,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Ignorer tous les dossiers .idea partout dans le projet
+**/.idea/
+
+# Ignorer les dossiers de compilation
+**/bin/
+**/obj/
