@@ -7,25 +7,22 @@
  * Sortie : Affichage de la phrase.
  */
 
-using System;
+namespace job2;
 
-namespace job2
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.Write("Choisis un prénom : ");
-            string? prenom = Console.ReadLine();
+        Console.Write("Choisis un prénom : ");
+        string? prenom = Console.ReadLine();
 
-            if (!string.IsNullOrWhiteSpace(prenom))
-            {
-                Console.WriteLine($"Bonjour {prenom} !");
-            }
-            else
-            {
-                Console.WriteLine("Tu n'as rien entré !");
-            }
+        if (!string.IsNullOrWhiteSpace(prenom))
+        {
+            Console.WriteLine($"Bonjour {prenom} !");
+        }
+        else
+        {
+            Console.WriteLine("Tu n'as rien entré !");
         }
     }
 }
