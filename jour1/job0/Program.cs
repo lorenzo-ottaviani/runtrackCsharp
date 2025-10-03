@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Auteur : Lorenzo OTTAVIANI.
  * Date : 29/09/2025 23h35
  * But de l'exercice :
@@ -11,9 +11,9 @@ using System;
 
 namespace job0
 {
-    internal class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             char lettre = 'a';
             Console.WriteLine(lettre);
@@ -43,4 +43,3 @@ namespace job0
         }
     }
 }
- 

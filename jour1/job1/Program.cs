@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Auteur : Lorenzo OTTAVIANI.
  * Date : 30/09/2025 9h49
  * But de l'exercice :
@@ -11,13 +11,23 @@ using System;
 
 namespace job1
 {
-    internal class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Bienvenue dans notre programme !");
-            string message = Console.ReadLine();
-            Console.WriteLine("Entrez votre message : " + message);
+            Console.Write("Entrez votre message : ");
+
+            string? message = Console.ReadLine();
+
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                Console.WriteLine("Votre message est : " + message);
+            }
+            else
+            {
+                Console.WriteLine("Aucun message saisi.");
+            }
             
         }
     }
